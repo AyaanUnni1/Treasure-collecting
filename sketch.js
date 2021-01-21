@@ -35,7 +35,7 @@ boy = createSprite(300,550,20,20);
 boy.addAnimation("SahilRunning",boyImage);
 boy.scale=0.08;
   
-gameOver = createSprite(355,300,50,10);  
+gameOver = createSprite(width/2,300,50,10);  
 gameOver.addAnimation("over",endImage);
 gameOver.visible = false;
   
@@ -96,7 +96,7 @@ function draw() {
       
         gameOver.visible = true;
         
-        boy.x = 355;
+        boy.x = width/2;
            
         //i set their velocity to 0 but they still move...pls clear this doubt.
      
